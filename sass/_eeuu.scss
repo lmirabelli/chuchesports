@@ -1,0 +1,23 @@
+$primario: #591e1b;
+$secundario: #fff;
+$terciario: #242b3c;
+
+.main{
+    .eeuu{
+        background-color: $secundario;
+        border: 3px solid $primario;
+        h2{
+            color: $primario;
+        }
+        .sub, .descripcion{
+            color: $terciario;
+        }
+        img{
+            border: 1px solid $primario;
+        }
+        .precio{
+            background-color: $primario;
+            color: $secundario;
+        }
+    }
+}

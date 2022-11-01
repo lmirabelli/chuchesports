@@ -1,0 +1,201 @@
+@font-face {
+  font-family: "principal";
+  src: url("../Mukta-Regular.ttf");
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "principal";
+}
+
+body {
+  background-color: #3E99FA;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100%25'%3E%3Cdefs%3E%3ClinearGradient id='a' gradientUnits='userSpaceOnUse' x1='0' x2='0' y1='0' y2='100%25' gradientTransform='rotate(148,680,347)'%3E%3Cstop offset='0' stop-color='%233E99FA'/%3E%3Cstop offset='1' stop-color='%23327AC7'/%3E%3C/linearGradient%3E%3Cpattern patternUnits='userSpaceOnUse' id='b' width='300' height='250' x='0' y='0' viewBox='0 0 1080 900'%3E%3Cg fill-opacity='0.24'%3E%3Cpolygon fill='%23444' points='90 150 0 300 180 300'/%3E%3Cpolygon points='90 150 180 0 0 0'/%3E%3Cpolygon fill='%23AAA' points='270 150 360 0 180 0'/%3E%3Cpolygon fill='%23DDD' points='450 150 360 300 540 300'/%3E%3Cpolygon fill='%23999' points='450 150 540 0 360 0'/%3E%3Cpolygon points='630 150 540 300 720 300'/%3E%3Cpolygon fill='%23DDD' points='630 150 720 0 540 0'/%3E%3Cpolygon fill='%23444' points='810 150 720 300 900 300'/%3E%3Cpolygon fill='%23FFF' points='810 150 900 0 720 0'/%3E%3Cpolygon fill='%23DDD' points='990 150 900 300 1080 300'/%3E%3Cpolygon fill='%23444' points='990 150 1080 0 900 0'/%3E%3Cpolygon fill='%23DDD' points='90 450 0 600 180 600'/%3E%3Cpolygon points='90 450 180 300 0 300'/%3E%3Cpolygon fill='%23666' points='270 450 180 600 360 600'/%3E%3Cpolygon fill='%23AAA' points='270 450 360 300 180 300'/%3E%3Cpolygon fill='%23DDD' points='450 450 360 600 540 600'/%3E%3Cpolygon fill='%23999' points='450 450 540 300 360 300'/%3E%3Cpolygon fill='%23999' points='630 450 540 600 720 600'/%3E%3Cpolygon fill='%23FFF' points='630 450 720 300 540 300'/%3E%3Cpolygon points='810 450 720 600 900 600'/%3E%3Cpolygon fill='%23DDD' points='810 450 900 300 720 300'/%3E%3Cpolygon fill='%23AAA' points='990 450 900 600 1080 600'/%3E%3Cpolygon fill='%23444' points='990 450 1080 300 900 300'/%3E%3Cpolygon fill='%23222' points='90 750 0 900 180 900'/%3E%3Cpolygon points='270 750 180 900 360 900'/%3E%3Cpolygon fill='%23DDD' points='270 750 360 600 180 600'/%3E%3Cpolygon points='450 750 540 600 360 600'/%3E%3Cpolygon points='630 750 540 900 720 900'/%3E%3Cpolygon fill='%23444' points='630 750 720 600 540 600'/%3E%3Cpolygon fill='%23AAA' points='810 750 720 900 900 900'/%3E%3Cpolygon fill='%23666' points='810 750 900 600 720 600'/%3E%3Cpolygon fill='%23999' points='990 750 900 900 1080 900'/%3E%3Cpolygon fill='%23999' points='180 0 90 150 270 150'/%3E%3Cpolygon fill='%23444' points='360 0 270 150 450 150'/%3E%3Cpolygon fill='%23FFF' points='540 0 450 150 630 150'/%3E%3Cpolygon points='900 0 810 150 990 150'/%3E%3Cpolygon fill='%23222' points='0 300 -90 450 90 450'/%3E%3Cpolygon fill='%23FFF' points='0 300 90 150 -90 150'/%3E%3Cpolygon fill='%23FFF' points='180 300 90 450 270 450'/%3E%3Cpolygon fill='%23666' points='180 300 270 150 90 150'/%3E%3Cpolygon fill='%23222' points='360 300 270 450 450 450'/%3E%3Cpolygon fill='%23FFF' points='360 300 450 150 270 150'/%3E%3Cpolygon fill='%23444' points='540 300 450 450 630 450'/%3E%3Cpolygon fill='%23222' points='540 300 630 150 450 150'/%3E%3Cpolygon fill='%23AAA' points='720 300 630 450 810 450'/%3E%3Cpolygon fill='%23666' points='720 300 810 150 630 150'/%3E%3Cpolygon fill='%23FFF' points='900 300 810 450 990 450'/%3E%3Cpolygon fill='%23999' points='900 300 990 150 810 150'/%3E%3Cpolygon points='0 600 -90 750 90 750'/%3E%3Cpolygon fill='%23666' points='0 600 90 450 -90 450'/%3E%3Cpolygon fill='%23AAA' points='180 600 90 750 270 750'/%3E%3Cpolygon fill='%23444' points='180 600 270 450 90 450'/%3E%3Cpolygon fill='%23444' points='360 600 270 750 450 750'/%3E%3Cpolygon fill='%23999' points='360 600 450 450 270 450'/%3E%3Cpolygon fill='%23666' points='540 600 630 450 450 450'/%3E%3Cpolygon fill='%23222' points='720 600 630 750 810 750'/%3E%3Cpolygon fill='%23FFF' points='900 600 810 750 990 750'/%3E%3Cpolygon fill='%23222' points='900 600 990 450 810 450'/%3E%3Cpolygon fill='%23DDD' points='0 900 90 750 -90 750'/%3E%3Cpolygon fill='%23444' points='180 900 270 750 90 750'/%3E%3Cpolygon fill='%23FFF' points='360 900 450 750 270 750'/%3E%3Cpolygon fill='%23AAA' points='540 900 630 750 450 750'/%3E%3Cpolygon fill='%23FFF' points='720 900 810 750 630 750'/%3E%3Cpolygon fill='%23222' points='900 900 990 750 810 750'/%3E%3Cpolygon fill='%23222' points='1080 300 990 450 1170 450'/%3E%3Cpolygon fill='%23FFF' points='1080 300 1170 150 990 150'/%3E%3Cpolygon points='1080 600 990 750 1170 750'/%3E%3Cpolygon fill='%23666' points='1080 600 1170 450 990 450'/%3E%3Cpolygon fill='%23DDD' points='1080 900 1170 750 990 750'/%3E%3C/g%3E%3C/pattern%3E%3C/defs%3E%3Crect x='0' y='0' fill='url(%23a)' width='100%25' height='100%25'/%3E%3Crect x='0' y='0' fill='url(%23b)' width='100%25' height='100%25'/%3E%3C/svg%3E");
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+.menu {
+  width: 85%;
+  height: 120px;
+  background-color: rgba(138, 192, 251, 0.55);
+  margin: 0 auto;
+  backdrop-filter: blur(3px);
+  border: 2px solid #8ac0fb;
+  border-top: 0px;
+}
+.menu img {
+  height: 120px;
+}
+
+.main {
+  width: 98%;
+  margin: 15px auto;
+  background-color: rgba(62, 153, 250, 0.55);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 15px 0;
+  backdrop-filter: blur(3px);
+  border: 3px solid #8ac0fb;
+}
+.main .card {
+  width: 18%;
+  margin: 12px auto;
+  padding: 5px 0;
+  text-align: center;
+  border-radius: 3px 16px 3px 3px;
+  box-shadow: 5.1px 24.7px 23px -9px rgba(0, 0, 0, 0.07), 8.2px 39.8px 32.1px -9px rgba(0, 0, 0, 0.097), 10.1px 49.1px 37.8px -9px rgba(0, 0, 0, 0.114), 11.4px 55.5px 42.7px -9px rgba(0, 0, 0, 0.127), 12.4px 60.4px 48.1px -9px rgba(0, 0, 0, 0.139), 13.2px 64.3px 54.9px -9px rgba(0, 0, 0, 0.152), 13.9px 67.6px 63.8px -9px rgba(0, 0, 0, 0.167), 14.5px 70.5px 75.8px -9px rgba(0, 0, 0, 0.189), 15px 73px 92px -9px rgba(0, 0, 0, 0.23);
+}
+.main .card h2 {
+  padding-top: 0.75em;
+  text-transform: uppercase;
+  line-height: 0.1em;
+  font-size: 1.5em;
+}
+.main .card .sub {
+  text-transform: capitalize;
+  font-size: 1.2em;
+}
+.main .card .descripcion {
+  font-size: 1.1em;
+  line-height: 1.3em;
+}
+.main .card .precio {
+  width: 35%;
+  font-size: 1.5em;
+  font-weight: 900;
+}
+.main .card img {
+  width: 94%;
+  margin: 0 3%;
+}
+
+.main .argentina {
+  background-color: #fff;
+  border: 3px solid #75aadb;
+}
+.main .argentina h2 {
+  color: #75aadb;
+}
+.main .argentina .sub, .main .argentina .descripcion {
+  color: #000;
+}
+.main .argentina img {
+  border: 1px solid #75aadb;
+}
+.main .argentina .precio {
+  background-color: #75aadb;
+  color: #fff;
+}
+
+.main .cleveland {
+  background-color: #fff;
+  border: 3px solid #ddc96a;
+}
+.main .cleveland h2 {
+  color: #ddc96a;
+}
+.main .cleveland .sub, .main .cleveland .descripcion {
+  color: #752b58;
+}
+.main .cleveland img {
+  border: 1px solid #ddc96a;
+}
+.main .cleveland .precio {
+  background-color: #ddc96a;
+  color: #fff;
+}
+
+.main .boston {
+  background-color: #c3ee3d;
+  border: 3px solid #497f3d;
+}
+.main .boston h2 {
+  color: #497f3d;
+}
+.main .boston .sub, .main .boston .descripcion {
+  color: #000;
+}
+.main .boston img {
+  border: 1px solid #497f3d;
+}
+.main .boston .precio {
+  background-color: #497f3d;
+  color: #c3ee3d;
+}
+
+.main .bulls {
+  background-color: #9b1b1e;
+  border: 3px solid #000;
+}
+.main .bulls h2 {
+  color: #000;
+}
+.main .bulls .sub, .main .bulls .descripcion {
+  color: #fff;
+}
+.main .bulls img {
+  border: 1px solid #000;
+}
+.main .bulls .precio {
+  background-color: #000;
+  color: #9b1b1e;
+}
+
+.main .spurs {
+  background-color: #fff;
+  border: 3px solid #434038;
+}
+.main .spurs h2 {
+  color: #434038;
+}
+.main .spurs .sub, .main .spurs .descripcion {
+  color: #000;
+}
+.main .spurs img {
+  border: 1px solid #434038;
+}
+.main .spurs .precio {
+  background-color: #434038;
+  color: #fff;
+}
+
+.main .eeuu {
+  background-color: #fff;
+  border: 3px solid #591e1b;
+}
+.main .eeuu h2 {
+  color: #591e1b;
+}
+.main .eeuu .sub, .main .eeuu .descripcion {
+  color: #242b3c;
+}
+.main .eeuu img {
+  border: 1px solid #591e1b;
+}
+.main .eeuu .precio {
+  background-color: #591e1b;
+  color: #fff;
+}
+
+.main .simpsons {
+  background-color: #e1b840;
+  border: 3px solid #fff;
+}
+.main .simpsons h2 {
+  color: #fff;
+}
+.main .simpsons .sub, .main .simpsons .descripcion {
+  color: #242b3c;
+}
+.main .simpsons img {
+  border: 1px solid #fff;
+}
+.main .simpsons .precio {
+  background-color: #fff;
+  color: #e1b840;
+}
+
+/*# sourceMappingURL=index.css.map */
