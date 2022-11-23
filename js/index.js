@@ -1,22 +1,22 @@
 let catalogo = document.getElementById('catalogo');
+let tlS = document.getElementById('tlS')
+let tlM = document.getElementById('tlM')
+let tlL = document.getElementById('tlL')
+let tlXL = document.getElementById('tlXL')
+let tlXXL = document.getElementById('tlXXL')
+let tlTodos = document.getElementById('tlTodos')
 let definirClase
 let jug;
 
 camisetas.sort((a,b) => a.posicion - b.posicion)
 
-let armadoCatalogo = (productos) => {
+let makeCard = (productos) =>{
+    catalogo.innerHTML = '';
     for(prod of productos){
         jugador = prod.jugador.toUpperCase()
         prod.titulo.includes('camiseta') ? jug = 'Jugador: ' : jug = '';
-        prod.detalle == 'seleccion argentina' && (definirClase = 'argentina')
-        prod.detalle == 'cleveland cavaliers' && (definirClase = 'cleveland')
-        prod.detalle == 'boston celtics' && (definirClase = 'boston')
-        prod.detalle == 'chicago bulls' && (definirClase = 'bulls')
-        prod.detalle == 'san antonio spurs' && (definirClase = 'spurs')
-        prod.detalle == 'seleccion estados unidos' && (definirClase = 'eeuu')
-        prod.detalle == 'los simpsons' && (definirClase = 'simpsons')
         catalogo.innerHTML += `
-        <div class="card ${definirClase}" id="tarjeta">
+        <div class="card">
         <h2>${prod.titulo}</h2>
         <p class="sub">${prod.detalle}</p>
         <img src="${prod.imagen}">
@@ -28,4 +28,21 @@ let armadoCatalogo = (productos) => {
     }
 }
 
-armadoCatalogo(camisetas)
+let catalogueando = (productos, prodSize) => {
+    if(prodSize == 'all'){
+        makeCard(productos)
+    }else{
+        productos = productos.filter(p => p.talle == prodSize)
+        makeCard(productos)
+        console.log(prodSize)
+    }
+
+}
+
+catalogueando(camisetas,'all')
+tlS.addEventListener('click', () => catalogueando(camisetas, 'S'))
+tlM.addEventListener('click', () => catalogueando(camisetas, 'M'))
+tlL.addEventListener('click', () => catalogueando(camisetas, 'L'))
+tlXL.addEventListener('click', () => catalogueando(camisetas, 'XL'))
+tlXXL.addEventListener('click', () => catalogueando(camisetas, 'XXL'))
+tlTodos.addEventListener('click', () => catalogueando(camisetas, 'all'))
